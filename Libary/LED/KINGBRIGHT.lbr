@@ -106,7 +106,9 @@ GaAs substrate) light emitting diode chip</description>
 <devices>
 <device name="" package="KPHCM-2012EC-T">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="BEZEICHNUNG" value="KPHCM-2012EC-T"/>
+</technology>
 </technologies>
 </device>
 </devices>

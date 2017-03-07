@@ -59,6 +59,19 @@
 </packages>
 <symbols>
 <symbol name="KPHCM-2012EC-T">
+<description>Features
+- 2.0X1.25mm SMT LED,0.5mm max. thickness.
+- Low power consumption.
+- Wide viewing angle.
+- Ideal for backlight and indicator.
+- Various colors and lens types available.
+- Package : 2000pcs / reel.
+- Moisture sensitivity level : level 3.
+- RoHS compliant.
+
+Description
+The Super Bright Orange device is made with AlGaInP (on
+GaAs substrate) light emitting diode chip</description>
 <circle x="-33.02" y="20.32" radius="2.54" width="0.254" layer="94"/>
 <wire x1="-30.48" y1="20.32" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="20.32" x2="-17.78" y2="27.94" width="0.254" layer="94"/>
