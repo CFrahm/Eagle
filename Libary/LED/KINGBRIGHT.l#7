@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.003125" unitdist="mic" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.003125" altunitdist="mic" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -47,7 +47,7 @@
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -56,59 +56,20 @@
 </layers>
 <library>
 <packages>
-<package name="KPHCM-2012EC-T">
-<rectangle x1="-0.993446875" y1="-0.625203125" x2="1.006553125" y2="0.624796875" layer="21"/>
-<smd name="P$1" x="-0.75" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$2" x="0.75" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-</package>
 </packages>
 <symbols>
 <symbol name="KPHCM-2012EC-T">
-<description>Features
-- 2.0X1.25mm SMT LED,0.5mm max. thickness.
-- Low power consumption.
-- Wide viewing angle.
-- Ideal for backlight and indicator.
-- Various colors and lens types available.
-- Package : 2000pcs / reel.
-- Moisture sensitivity level : level 3.
-- RoHS compliant.
-
-Description
-The Super Bright Orange device is made with AlGaInP (on
-GaAs substrate) light emitting diode chip</description>
-<pin name="P$1" x="-27.94" y="30.48" length="middle" direction="in"/>
-<pin name="P$2" x="-12.7" y="30.48" length="middle" direction="out" rot="R180"/>
-<wire x1="-22.86" y1="33.02" x2="-22.86" y2="27.94" width="0.254" layer="94"/>
-<wire x1="-22.86" y1="27.94" x2="-17.78" y2="30.48" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="30.48" x2="-22.86" y2="33.02" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="33.02" x2="-17.78" y2="27.94" width="0.254" layer="94"/>
+<circle x="-33.02" y="20.32" radius="2.54" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="20.32" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="20.32" x2="-17.78" y2="27.94" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="20.32" x2="-17.78" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="12.7" x2="-10.16" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="27.94" x2="-10.16" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="20.32" x2="2.54" y2="20.32" width="0.254" layer="94"/>
+<circle x="5.08" y="20.32" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="KPHCM-2012EC-T">
-<description>Features
-z 2.0X1.25mm SMT LED,0.5mm max. thickness.
-z Low power consumption.
-z Wide viewing angle.
-z Ideal for backlight and indicator.
-z Various colors and lens types available.
-z Package : 2000pcs / reel.
-z Moisture sensitivity level : level 3.
-z RoHS compliant.
-Description
-The Super Bright Orange device is made with AlGaInP (on
-GaAs substrate) light emitting diode chip</description>
-<gates>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>
