@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.003125" unitdist="mic" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.003125" altunitdist="mic" altunit="mm"/>
+<grid distance="0.005" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -56,59 +56,67 @@
 </layers>
 <library>
 <packages>
-<package name="KPHCM-2012EC-T">
-<rectangle x1="-0.993446875" y1="-0.625203125" x2="1.006553125" y2="0.624796875" layer="21"/>
-<smd name="P$1" x="-0.75" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$2" x="0.75" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<package name="PIN_LAYOUT_FOR_EXTENSION">
+<rectangle x1="-19.939" y1="-8.636" x2="23.241" y2="9.144" layer="21"/>
+<pad name="P$1" x="-16.129" y="7.874" drill="0.9" diameter="1.778"/>
+<pad name="P$2" x="-13.589" y="7.874" drill="0.9" diameter="1.778"/>
+<pad name="P$3" x="-11.049" y="7.874" drill="0.9" diameter="1.778"/>
+<pad name="P$4" x="-8.509" y="7.874" drill="0.9" diameter="1.778"/>
+<pad name="P$5" x="-5.969" y="7.874" drill="0.9" diameter="1.778"/>
+<pad name="P$6" x="-3.429" y="7.874" drill="0.9" diameter="1.778"/>
+<pad name="P$7" x="-0.889" y="7.874" drill="0.9" diameter="1.778"/>
+<pad name="P$8" x="1.651" y="7.874" drill="0.9" diameter="1.778"/>
+<pad name="P$9" x="4.191" y="7.874" drill="0.9" diameter="1.778"/>
+<pad name="P$10" x="6.731" y="7.874" drill="0.9" diameter="1.778"/>
+<pad name="P$11" x="9.271" y="7.874" drill="0.9" diameter="1.778"/>
+<pad name="P$12" x="11.811" y="7.874" drill="0.9" diameter="1.778"/>
+<pad name="P$13" x="14.351" y="7.874" drill="0.9" diameter="1.778"/>
+<pad name="P$14" x="16.891" y="7.874" drill="0.9" diameter="1.778"/>
+<pad name="P$15" x="19.431" y="7.874" drill="0.9" diameter="1.778"/>
 </package>
 </packages>
 <symbols>
-<symbol name="KPHCM-2012EC-T">
-<description>Features
-- 2.0X1.25mm SMT LED,0.5mm max. thickness.
-- Low power consumption.
-- Wide viewing angle.
-- Ideal for backlight and indicator.
-- Various colors and lens types available.
-- Package : 2000pcs / reel.
-- Moisture sensitivity level : level 3.
-- RoHS compliant.
-
-Description
-The Super Bright Orange device is made with AlGaInP (on
-GaAs substrate) light emitting diode chip</description>
-<pin name="P$1" x="-27.94" y="30.48" length="middle" direction="in"/>
-<pin name="P$2" x="-12.7" y="30.48" length="middle" direction="out" rot="R180"/>
-<wire x1="-22.86" y1="33.02" x2="-22.86" y2="27.94" width="0.254" layer="94"/>
-<wire x1="-22.86" y1="27.94" x2="-17.78" y2="30.48" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="30.48" x2="-22.86" y2="33.02" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="33.02" x2="-17.78" y2="27.94" width="0.254" layer="94"/>
+<symbol name="PIN_LAYOUT_FOR_EXTENSIONS">
+<pin name="D12" x="-58.42" y="20.32" length="short" rot="R270"/>
+<pin name="D11" x="-55.88" y="20.32" length="short" rot="R270"/>
+<pin name="D10" x="-53.34" y="20.32" length="short" rot="R270"/>
+<pin name="D9" x="-50.8" y="20.32" length="short" rot="R270"/>
+<pin name="D8" x="-48.26" y="20.32" length="short" rot="R270"/>
+<pin name="D7" x="-45.72" y="20.32" length="short" rot="R270"/>
+<pin name="D6" x="-43.18" y="20.32" length="short" rot="R270"/>
+<pin name="D5" x="-40.64" y="20.32" length="short" rot="R270"/>
+<pin name="D4" x="-38.1" y="20.32" length="short" rot="R270"/>
+<pin name="D3" x="-35.56" y="20.32" length="short" rot="R270"/>
+<pin name="D2" x="-33.02" y="20.32" length="short" rot="R270"/>
+<pin name="GND" x="-30.48" y="20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="RST" x="-27.94" y="20.32" length="short" rot="R270"/>
+<pin name="RX0" x="-25.4" y="20.32" length="short" rot="R270"/>
+<pin name="TX1" x="-22.86" y="20.32" length="short" rot="R270"/>
+<pin name="VIN" x="-22.86" y="-5.08" length="short" direction="pwr" rot="R90"/>
+<pin name="GND2" x="-25.4" y="-5.08" length="short" direction="pwr" rot="R90"/>
+<pin name="RST2" x="-27.94" y="-5.08" length="short" rot="R90"/>
+<pin name="5V" x="-30.48" y="-5.08" length="short" direction="pwr" rot="R90"/>
+<pin name="A7" x="-33.02" y="-5.08" length="short" rot="R90"/>
+<pin name="A6" x="-35.56" y="-5.08" length="short" rot="R90"/>
+<pin name="A5" x="-38.1" y="-5.08" length="short" rot="R90"/>
+<pin name="A4" x="-40.64" y="-5.08" length="short" rot="R90"/>
+<pin name="A3" x="-43.18" y="-5.08" length="short" rot="R90"/>
+<pin name="A2" x="-45.72" y="-5.08" length="short" rot="R90"/>
+<pin name="A1" x="-48.26" y="-5.08" length="short" rot="R90"/>
+<pin name="A0" x="-50.8" y="-5.08" length="short" rot="R90"/>
+<pin name="REF" x="-53.34" y="-5.08" length="short" rot="R90"/>
+<pin name="3V3" x="-55.88" y="-5.08" length="short" direction="pwr" rot="R90"/>
+<pin name="D13" x="-58.42" y="-5.08" length="short" rot="R90"/>
+<rectangle x1="-60.96" y1="-2.54" x2="-17.78" y2="17.78" layer="94"/>
+<pin name="P$1" x="-22.86" y="10.16" visible="off" length="point"/>
+<pin name="P$2" x="-22.86" y="7.62" visible="off" length="point"/>
+<pin name="P$16" x="-22.86" y="5.08" visible="off" length="point"/>
+<pin name="P$17" x="-20.32" y="5.08" visible="off" length="point"/>
+<pin name="P$18" x="-20.32" y="7.62" visible="off" length="point"/>
+<pin name="P$19" x="-20.32" y="10.16" visible="off" length="point"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="KPHCM-2012EC-T">
-<description>Features
-z 2.0X1.25mm SMT LED,0.5mm max. thickness.
-z Low power consumption.
-z Wide viewing angle.
-z Ideal for backlight and indicator.
-z Various colors and lens types available.
-z Package : 2000pcs / reel.
-z Moisture sensitivity level : level 3.
-z RoHS compliant.
-Description
-The Super Bright Orange device is made with AlGaInP (on
-GaAs substrate) light emitting diode chip</description>
-<gates>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>

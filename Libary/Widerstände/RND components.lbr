@@ -92,6 +92,10 @@ Dimensions L x W x H 1.60 x 0.8 x 0.45 mm</description>
 </gates>
 <devices>
 <device name="" package="RESISTOR-0603">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

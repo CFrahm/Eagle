@@ -105,6 +105,10 @@ GaAs substrate) light emitting diode chip</description>
 </gates>
 <devices>
 <device name="" package="KPHCM-2012EC-T">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="BEZEICHNUNG" value="KPHCM-2012EC-T"/>
